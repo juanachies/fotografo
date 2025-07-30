@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./img/camara.png">
+  <title>Portfolio Fotógrafo</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Portfolio Fotógrafo</h1>
+        <nav>
+        <a href="#galeria">Galería</a>
+        <a href="#contacto">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-texto">
+            <h1>Capturando esencia en cada imagen</h1>
+            </div>
+        </section>
+
+        <section id="galeria" class="galeria">
+            <h2>Galería</h2>
+            <div class="contenedor-fotos">
+                <div class="foto"><img src="./img/galeria3.jpg" alt="Foto 1"></div>
+                <div class="foto"><img src="./img/galeria6.jpg" alt="Foto 2"></div>
+                <div class="foto"><img src="./img/galeria1.jpg" alt="Foto 3"></div>
+                <div class="foto"><img src="./img/galeria4.jpg" alt="Foto 4"></div>
+                <div class="foto"><img src="./img/galeria5.jpg" alt="Foto 5"></div>
+                <div class="foto"><img src="./img/galeria2.jpg" alt="Foto 6"></div>
+            </div>
+        </section>
+
+        <section id="contacto" class="contacto">
+            <h2>Contacto</h2>
+            <form id="form">
+                <label>
+                    <input id="nombre" type="text" placeholder="Tu nombre">
+                    <span class="error" id="errorNombre"></span>
+                </label>
+
+                <label>
+                    <input id="email" type="text" placeholder="Tu email">
+                    <span class="error" id="errorMail"></span>
+                </label>               
+                
+                <textarea id="mensaje" placeholder="Mensaje"></textarea>
+
+                <button id="enviar" type="submit">Enviar</button>
+            </form>
+            <p><small>Este formulario es un ejemplo, de ser completado no llegará a nadie.</small></p>
+        </section>
+    </main>
+    
+    <div class="lightbox" id="lightbox">
+        <span id="cerrar">&times;</span>
+        <img id="imgGrande" src="" alt="Imagen ampliada">
+    </div>
+
+
+    <footer>
+        <p>&copy; Hecho por Juana</p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>
