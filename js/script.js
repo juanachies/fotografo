@@ -6,6 +6,7 @@ const cerrar = document.getElementById('cerrar');
 document.querySelectorAll('.foto img').forEach(img => {
   img.addEventListener('click', () => {
     imgGrande.src = img.src;
+    imgGrande.alt = img.alt;
     lightbox.style.display = 'flex';
   });
 });
